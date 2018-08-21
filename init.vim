@@ -34,9 +34,10 @@ let g:ctrlp_root_markers = ['.ctrlp']
 " Ignore files in .gitignore
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
+" Airline should use powerline fonts
+let g:airline_powerline_fonts=1
+
 " Asynchronous Lint Engine (ALE)
-" Limit linters used for JavaScript.
-let g:airline#extensions#ale#enabled = 1
 " Enable completion where available.
 let g:ale_completion_enabled = 1
 let g:ale_linters = { 'javascript': ['flow', 'eslint'] }
