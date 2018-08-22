@@ -40,8 +40,14 @@ let g:airline_powerline_fonts=1
 " Asynchronous Lint Engine (ALE)
 " Enable completion where available.
 let g:ale_completion_enabled = 1
-let g:ale_linters = { 'javascript': ['flow', 'eslint'] }
-let g:ale_fixers = { 'javascript': ['eslint'] }
+let g:ale_linters = {  
+  \  'javascript': ['flow', 'eslint'], 
+  \  'typescript': ['tsserver', "tslint"] 
+\}
+let g:ale_fixers = { 
+  \  'javascript': ['eslint'],
+  \  'typescript': ['tslint'] 
+\}
 highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
 highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
 highlight ALEError ctermbg=none cterm=underline 
