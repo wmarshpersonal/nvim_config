@@ -48,6 +48,9 @@ let g:ale_fixers = {
   \  'javascript': ['eslint'],
   \  'typescript': ['tslint'] 
 \}
+" Ale should fix on save
+let g:ale_fix_on_save = 1
+
 highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
 highlight clear ALEWarningSign " otherwise uses error bg color (typically red)
 highlight ALEError ctermbg=none cterm=underline 
