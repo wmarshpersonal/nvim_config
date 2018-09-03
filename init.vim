@@ -46,7 +46,7 @@ let g:ale_linters = {
 \}
 let g:ale_fixers = { 
   \  'javascript': ['eslint'],
-  \  'typescript': ['tslint'] 
+  \  'typescript': ['prettier', 'tslint'] 
 \}
 
 highlight clear ALEErrorSign " otherwise uses error bg color (typically red)
