@@ -1,5 +1,12 @@
 execute pathogen#infect()
 
+" Unfortunate fix for neovim-qt opening an extra, blank buffer when
+" passed a file as a parameter
+if @% == ""
+  bd
+endif
+
+" Theming
 set t_Co=256
 set background=dark
 colorscheme monokai
