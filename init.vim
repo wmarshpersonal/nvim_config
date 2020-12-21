@@ -38,6 +38,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " ALE leader keys
 nmap <silent> <leader>aj :ALENext<cr>
 nmap <silent> <leader>ak :ALEPrevious<cr>
+nmap <silent> <leader>aw :ALENextWrap<cr>
 nmap <silent> <leader>af :ALEFix<cr>
 
 " Airline should use powerline fonts
