@@ -19,6 +19,11 @@ set relativenumber
 " Swap files go here
 set directory^=$HOME/.vim/tmp/
 
+" 80 lines please
+set colorcolumn=72
+highlight ColorColumn ctermbg=magenta
+call matchadd('ColorColumn', '\%81v', 100)
+
 " gitgutter should be speedy
 set updatetime=100
 
